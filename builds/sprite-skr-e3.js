@@ -2,8 +2,8 @@ module.exports = {
     board_env: "STM32G0B1RE_btt",
     min_version: "2.1.2",
     meta: {
-        stable_name: "ender_3_4.2.2-{{marlin_version}}-default-{{uid}}",
-        nightly_name: "ender_3_4.2.2-{{current_date}}-default-{{uid}}"
+        stable_name: "ender_3_skr-{{marlin_version}}-default-{{uid}}",
+        nightly_name: "ender_3_skr-{{current_date}}-default-{{uid}}"
     },
     based_on: {
         repo: "https://github.com/MarlinFirmware/Configurations/",
