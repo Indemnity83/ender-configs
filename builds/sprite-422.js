@@ -12,12 +12,12 @@ module.exports = {
         nightly_branch: "bugfix-2.1.x"
     },
     include: [
-        "builds/bed-leveling.js",
-        "builds/filament-change.js",
-        "builds/input-shaping.js",
-        "builds/octoprint.js",
-        "builds/quality-of-life.js",
-        "builds/sprite.js",        
+        // "builds/features/bed-leveling.js",
+        // "builds/features/filament-change.js",
+        // "builds/features/input-shaping.js",
+        // "builds/features/octoprint.js",
+        // "builds/features/quality-of-life.js",
+        // "builds/features/sprite.js",        
     ],
     configuration: {
         enable: [
