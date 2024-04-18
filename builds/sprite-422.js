@@ -12,17 +12,13 @@ module.exports = {
         nightly_branch: "bugfix-2.1.x"
     },
     include: [
-        "builds/features/bed-leveling.js",
         "builds/features/filament-change.js",
-        "builds/features/input-shaping.js",
-        "builds/features/octoprint.js",
-        "builds/features/quality-of-life.js",
         "builds/features/sprite.js",        
     ],
     configuration: {
         enable: [
-            ["STRING_CONFIG_H_AUTHOR", "u/minist3r, u/indemnity83"],
-            ["CUSTOM_MACHINE_NAME", "Ender-3 Pro w/ CRTouch and Sprite"],
+            ["STRING_CONFIG_H_AUTHOR", "u/indemnity83"],
+            ["CUSTOM_MACHINE_NAME", "Ender-3 Pro Dragon Forge"],
         ]
     }
 };
