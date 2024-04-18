@@ -5,7 +5,7 @@ module.exports = {
             // Enable the Nozzle Park Feature which is required by the
             // Advanced Pause Feature below
             "NOZZLE_PARK_FEATURE",
-            ["NOZZLE_PARK_POINT", ["(X_MAX_POS - 5)", "(Y_MIN_POS + 5)", 20]]   // Front right corner of bed
+            ["NOZZLE_PARK_POINT", q`{ (X_MAX_POS - 5), (Y_MIN_POS + 5), 20 }`]   // Front right corner of bed
         ]
     },
     configuration_adv: {
