@@ -68,8 +68,7 @@ module.exports = {
              | leveling system to ensure that the system is as close as possible.
              */
             "ASSISTED_TRAMMING",
-            "ASSISTED_TRAMMING_WIZARD",
-            ["TRAMMING_POINT_XY",  q`{{ 20, 20 } {180,  20} {180, 180} {20, 180}}`]
+            "ASSISTED_TRAMMING_WIZARD"
 
         ]
     }
