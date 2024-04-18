@@ -69,8 +69,8 @@ module.exports = {
              */
             "ASSISTED_TRAMMING",
             "ASSISTED_TRAMMING_WIZARD"
-            ["TRAMMING_POINT_XY",  [[ 20, 20 ], [ 180,  20 ], [ 180, 180 ], [ 20, 180 ] ]]
-            
+            ["TRAMMING_POINT_XY",  [ "{ 20, 20 }", "{180,  20}", "{180, 180}", "{20, 180}" ]]
+
         ]
     }
 };
