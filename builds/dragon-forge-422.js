@@ -135,6 +135,16 @@ module.exports = {
 
             "NOZZLE_PARK_FEATURE",
 
+            /*
+             |----------------------------------------------------------------------------
+             | S-Curve Acceleration
+             |----------------------------------------------------------------------------
+             | This option eliminates vibration during printing by fitting a Bézier curve
+             | to move acceleration, producing much smoother direction changes. Motors
+             | and hence the entire machine more closely obey the physics of motion.
+             */
+             
+            "S_CURVE_ACCELERATION",
         ]
     },
     configuration_adv: {
