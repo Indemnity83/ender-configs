@@ -145,6 +145,18 @@ module.exports = {
              */
              
             "S_CURVE_ACCELERATION",
+
+        ], 
+        disable: [
+
+            /*
+             |----------------------------------------------------------------------------
+             | Screens
+             |----------------------------------------------------------------------------
+             */
+            "SHOW_CUSTOM_BOOTSCREEN",
+            "CUSTOM_STATUS_SCREEN_IMAGE"
+
         ]
     },
     configuration_adv: {
