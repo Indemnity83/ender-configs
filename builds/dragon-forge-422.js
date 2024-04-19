@@ -54,6 +54,10 @@ module.exports = {
              | The sprite extruder has a built-in CRTrouch z-axis probe which provides us
              | far better z-axis precision. We need to tell Marlin to enable the probe.
              | Use M48 to test the probe repeatablity, and adjust options as needed.
+             |
+             | NOTE: the breakout board on the sprite hotend DOES NOT WORK with the 
+             | Ender 4.2.2 board, you'll need to run a traditional probe wire all the way
+             | from the probe to the board to make this work. 
              */
              
             "BLTOUCH",
