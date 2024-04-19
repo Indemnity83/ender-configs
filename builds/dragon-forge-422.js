@@ -85,7 +85,7 @@ module.exports = {
              */
  
             "AUTO_BED_LEVELING_BILINEAR",
-            "ENABLE_LEVEL_AFTER_G28",
+            "ENABLE_LEVELING_AFTER_G28",
             ["GRID_MAX_POINTS_X", 5],
             "LCD_BED_LEVELING",
 
