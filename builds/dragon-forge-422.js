@@ -91,6 +91,40 @@ module.exports = {
 
             /*
              |----------------------------------------------------------------------------
+             | Preheat Constants
+             |----------------------------------------------------------------------------
+             | 
+             | Setup some preheat temperatures for the printer to use and show in the LCD
+             | as options. These temperatures are set to be above the glass transition
+             | point, but set a bit on the low end to prevent filament from ozzing.
+             */
+
+            ["PREHEAT_1_LABEL", "PLA"],
+            ["PREHEAT_1_TEMP_HOTEND", 175],
+            ["PREHEAT_1_TEMP_BED ", 60],
+            ["PREHEAT_1_TEMP_CHAMBER", 35],
+            ["PREHEAT_1_FAN_SPEED", 0],
+
+            ["PREHEAT_2_LABEL", "ABS"],
+            ["PREHEAT_2_TEMP_HOTEND", 200],
+            ["PREHEAT_2_TEMP_BED ", 80],
+            ["PREHEAT_2_TEMP_CHAMBER", 35],
+            ["PREHEAT_2_FAN_SPEED", 0],
+
+            ["PREHEAT_3_LABEL", "PETG"],
+            ["PREHEAT_3_TEMP_HOTEND", 120],
+            ["PREHEAT_3_TEMP_BED ", 70],
+            ["PREHEAT_3_TEMP_CHAMBER", 35],
+            ["PREHEAT_3_FAN_SPEED", 0],
+
+            ["PREHEAT_4_LABEL", "TPU"],
+            ["PREHEAT_4_TEMP_HOTEND", 175],
+            ["PREHEAT_4_TEMP_BED ", 0],
+            ["PREHEAT_4_TEMP_CHAMBER", 35],
+            ["PREHEAT_4_FAN_SPEED", 0],
+
+            /*
+             |----------------------------------------------------------------------------
              | Nozzle Park
              |----------------------------------------------------------------------------
              | 
