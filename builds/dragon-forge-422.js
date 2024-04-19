@@ -63,6 +63,10 @@ module.exports = {
             "BLTOUCH",
             "Z_SAFE_HOMING",
             "USE_PROBE_FOR_Z_HOMING",  
+            ["MULTIPLE_PROBING", 2],  
+            ["Z_PROBE_LOW_POINT", -4],      
+            ["Z_PROBE_OFFSET_RANGE_MIN", -20],
+            ["Z_PROBE_OFFSET_RANGE_MAX", 20], 
 
             "Z_MIN_PROBE_REPEATABILITY_TEST",  // Enable the M48 repeatability test
 
