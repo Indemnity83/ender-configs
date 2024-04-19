@@ -84,7 +84,9 @@ module.exports = {
              | Mesh Validation and Mesh Editing systems. Enable LCD leveling menus.
              */
  
-            "AUTO_BED_LEVELING_UBL",
+            "AUTO_BED_LEVELING_BILINEAR",
+            "ENABLE_LEVEL_AFTER_G28",
+            ["GRID_MAX_POINTS_X", 5],
             "LCD_BED_LEVELING",
 
             /*
