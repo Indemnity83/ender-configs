@@ -111,18 +111,6 @@ module.exports = {
             ["PREHEAT_2_TEMP_CHAMBER", 35],
             ["PREHEAT_2_FAN_SPEED", 0],
 
-            ["PREHEAT_3_LABEL", "PETG"],
-            ["PREHEAT_3_TEMP_HOTEND", 120],
-            ["PREHEAT_3_TEMP_BED ", 70],
-            ["PREHEAT_3_TEMP_CHAMBER", 35],
-            ["PREHEAT_3_FAN_SPEED", 0],
-
-            ["PREHEAT_4_LABEL", "TPU"],
-            ["PREHEAT_4_TEMP_HOTEND", 175],
-            ["PREHEAT_4_TEMP_BED ", 0],
-            ["PREHEAT_4_TEMP_CHAMBER", 35],
-            ["PREHEAT_4_FAN_SPEED", 0],
-
             /*
              |----------------------------------------------------------------------------
              | Nozzle Park
