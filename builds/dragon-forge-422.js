@@ -134,10 +134,6 @@ module.exports = {
              */
 
             "NOZZLE_PARK_FEATURE",
-            ["NOZZLE_PARK_POINT", q`{ (X_MAX_POS - 1), (Y_MIN_POS + 1), 20 }`]    // Front right corner of bed
-            //["NOZZLE_PARK_POINT", q`{ (X_MIN_POS + 1), (Y_MAX_POS - 1), 20 }`]  // Back left corner of bed
-            //["NOZZLE_PARK_POINT", q`{ (X_MIN_POS + 1), (Y_MIN_POS + 1), 20 }`]  // Front left corner of bed
-            //["NOZZLE_PARK_POINT", q`{ (X_MAX_POS - 1), (Y_MAX_POS - 1), 20 }`]  // Back right corner of bed
 
         ]
     },
