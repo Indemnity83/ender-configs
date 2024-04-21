@@ -45,7 +45,14 @@ module.exports = {
             ["DEFAULT_Kp", 16.62],
             ["DEFAULT_Ki", 1.33],
             ["DEFAULT_Kd", 51.85],
-             
+
+            ["X_BED_SIZE", 225],
+            ["Y_BED_SIZE", 230],
+            ["X_MIN_POS", 1.5],
+            ["Y_MIN_POS", 4],
+            ["X_MAX_POS", 226.5],
+            ["Y_MAX_POS", 234],
+
             /*
              |----------------------------------------------------------------------------
              | Z-axis Probe
@@ -162,6 +169,7 @@ module.exports = {
 
             "ASSISTED_TRAMMING",
             "ASSISTED_TRAMMING_WIZARD",
+            ["TRAMMING_POINT_XY", [[27.5, 30], [197.5, 30], [197.5, 200], [27.5, 200]]],
             
             /*
              |----------------------------------------------------------------------------
