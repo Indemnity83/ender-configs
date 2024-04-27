@@ -3,17 +3,16 @@ module.exports = {
     min_version: "2.1.2",
     meta: {
         stable_name: "dragon_forge_4.2.2-{{marlin_version}}",
-        nightly_name: "dragon_forge_4.2.2-nightly-{{current_date}}"
+        nightly_name: "dragon_forge_4.2.2-nightly-{{current_date}}",
     },
     based_on: {
         repo: "https://github.com/MarlinFirmware/Configurations/",
         path: "/config/examples/Creality/Ender-3 Pro/CrealityV422/",
         stable_branch: "release-{{marlin_version}}",
-        nightly_branch: "bugfix-2.1.x"
+        nightly_branch: "bugfix-2.1.x",
     },
     configuration: {
         enable: [
-
             /*
              |----------------------------------------------------------------------------
              | Machine Info
@@ -62,21 +61,22 @@ module.exports = {
              | Ender 4.2.2 board, you'll need to run a traditional probe wire all the way
              | from the probe to the board to make this work. 
              */
-             
+
             "BLTOUCH",
             "Z_SAFE_HOMING",
-            "USE_PROBE_FOR_Z_HOMING",  
-            ["MULTIPLE_PROBING", 2],  
-            ["Z_PROBE_LOW_POINT", -4],      
+            "USE_PROBE_FOR_Z_HOMING",
+            ["MULTIPLE_PROBING", 2],
+            ["PROBING_MARGIN", 0],
+            ["Z_PROBE_LOW_POINT", -4],
             ["Z_PROBE_OFFSET_RANGE_MIN", -20],
-            ["Z_PROBE_OFFSET_RANGE_MAX", 20], 
+            ["Z_PROBE_OFFSET_RANGE_MAX", 20],
 
-            "Z_MIN_PROBE_REPEATABILITY_TEST",  // Enable the M48 repeatability test
+            "Z_MIN_PROBE_REPEATABILITY_TEST", // Enable the M48 repeatability test
 
             //"PROBING_HEATERS_OFF",           // Turn heaters off when probing
             //"PROBING_FANS_OFF",              // Turn fans off when probing
             //["DELAY_BEFORE_PROBING", 200],   // (ms) To prevent vibrations
- 
+
             /*
              |----------------------------------------------------------------------------
              | Bed Leveling
@@ -86,7 +86,7 @@ module.exports = {
              | benefits of other systems. UBL also includes integrated Mesh Generation
              | Mesh Validation and Mesh Editing systems. Enable LCD leveling menus.
              */
- 
+
             "AUTO_BED_LEVELING_BILINEAR",
             "ENABLE_LEVELING_AFTER_G28",
             ["GRID_MAX_POINTS_X", 5],
@@ -151,7 +151,6 @@ module.exports = {
     },
     configuration_adv: {
         enable: [
-
             /*
              |----------------------------------------------------------------------------
              | Bed Tramming
@@ -194,8 +193,7 @@ module.exports = {
 
             "HOST_ACTION_COMMANDS",
             "HOST_PROMPT_SUPPORT",
-            "HOST_STATUS_NOTIFICATIONS"
-
-        ]
-    }
+            "HOST_STATUS_NOTIFICATIONS",
+        ],
+    },
 };
