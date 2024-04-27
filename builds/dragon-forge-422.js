@@ -134,20 +134,19 @@ module.exports = {
              | to move acceleration, producing much smoother direction changes. Motors
              | and hence the entire machine more closely obey the physics of motion.
              */
-             
-            "S_CURVE_ACCELERATION",
 
-        ], 
-        disable: [
+            "S_CURVE_ACCELERATION",
 
             /*
              |----------------------------------------------------------------------------
-             | Screens
+             | Skew Correction
              |----------------------------------------------------------------------------
+             | Bed Skew Compensation corrects for misalignment in the XY, XZ, and ZY axes
+             | through the use of correction factors. Use M852 GCode to set a bed skew
+             | compensation factor. Valid correction factors range between -1 and 1.
              */
-            "SHOW_CUSTOM_BOOTSCREEN",
-            "CUSTOM_STATUS_SCREEN_IMAGE"
 
+            "SKEW_CORRECTION",
         ]
     },
     configuration_adv: {
