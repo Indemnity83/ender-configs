@@ -45,8 +45,12 @@ module.exports = {
             ["DEFAULT_Ki", 1.33],
             ["DEFAULT_Kd", 51.85],
 
-            ["X_BED_SIZE", 230],
-            ["Y_BED_SIZE", 230],
+            // Not specific to the sprite extruder, but because the probe offsets are large
+            // this becomes important to specificy accuratly. 
+            ["X_BED_SIZE", 235],
+            ["Y_BED_SIZE", 235],
+            ["X_MAX_POS", 260],
+            ["Y_MAX_POS", 235],
 
             /*
              |----------------------------------------------------------------------------
@@ -163,7 +167,7 @@ module.exports = {
 
             "ASSISTED_TRAMMING",
             "ASSISTED_TRAMMING_WIZARD",
-            ["TRAMMING_POINT_XY", q`{{30, 30}, {200, 30}, {200, 200}, {30, 200}}`],
+            ["TRAMMING_POINT_XY", q`{{35, 35}, {200, 35}, {200, 200}, {35, 200}}`],
 
             /*
              |----------------------------------------------------------------------------
