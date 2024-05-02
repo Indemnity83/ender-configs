@@ -3,17 +3,16 @@ module.exports = {
     min_version: "2.1.2",
     meta: {
         stable_name: "dragon_forge_4.2.2-{{marlin_version}}",
-        nightly_name: "dragon_forge_4.2.2-nightly-{{current_date}}"
+        nightly_name: "dragon_forge_4.2.2-nightly-{{current_date}}",
     },
     based_on: {
         repo: "https://github.com/MarlinFirmware/Configurations/",
         path: "/config/examples/Creality/Ender-3 Pro/CrealityV422/",
         stable_branch: "release-{{marlin_version}}",
-        nightly_branch: "bugfix-2.1.x"
+        nightly_branch: "bugfix-2.1.x",
     },
     configuration: {
         enable: [
-
             /*
              |----------------------------------------------------------------------------
              | Machine Info
@@ -45,7 +44,14 @@ module.exports = {
             ["DEFAULT_Kp", 16.62],
             ["DEFAULT_Ki", 1.33],
             ["DEFAULT_Kd", 51.85],
-             
+
+            // Not specific to the sprite extruder, but because the probe offsets are large
+            // this becomes important to specificy accuratly. 
+            ["X_BED_SIZE", 235],
+            ["Y_BED_SIZE", 235],
+            ["X_MAX_POS", 260],
+            ["Y_MAX_POS", 235],
+
             /*
              |----------------------------------------------------------------------------
              | Z-axis Probe
@@ -59,21 +65,22 @@ module.exports = {
              | Ender 4.2.2 board, you'll need to run a traditional probe wire all the way
              | from the probe to the board to make this work. 
              */
-             
+
             "BLTOUCH",
             "Z_SAFE_HOMING",
-            "USE_PROBE_FOR_Z_HOMING",  
-            ["MULTIPLE_PROBING", 2],  
-            ["Z_PROBE_LOW_POINT", -4],      
+            "USE_PROBE_FOR_Z_HOMING",
+            ["MULTIPLE_PROBING", 2],
+            ["PROBING_MARGIN", 0],
+            ["Z_PROBE_LOW_POINT", -4],
             ["Z_PROBE_OFFSET_RANGE_MIN", -20],
-            ["Z_PROBE_OFFSET_RANGE_MAX", 20], 
+            ["Z_PROBE_OFFSET_RANGE_MAX", 20],
 
-            "Z_MIN_PROBE_REPEATABILITY_TEST",  // Enable the M48 repeatability test
+            "Z_MIN_PROBE_REPEATABILITY_TEST", // Enable the M48 repeatability test
 
             //"PROBING_HEATERS_OFF",           // Turn heaters off when probing
             //"PROBING_FANS_OFF",              // Turn fans off when probing
             //["DELAY_BEFORE_PROBING", 200],   // (ms) To prevent vibrations
- 
+
             /*
              |----------------------------------------------------------------------------
              | Bed Leveling
@@ -83,7 +90,7 @@ module.exports = {
              | benefits of other systems. UBL also includes integrated Mesh Generation
              | Mesh Validation and Mesh Editing systems. Enable LCD leveling menus.
              */
- 
+
             "AUTO_BED_LEVELING_BILINEAR",
             "ENABLE_LEVELING_AFTER_G28",
             ["GRID_MAX_POINTS_X", 5],
@@ -131,25 +138,23 @@ module.exports = {
              | to move acceleration, producing much smoother direction changes. Motors
              | and hence the entire machine more closely obey the physics of motion.
              */
-             
-            "S_CURVE_ACCELERATION",
 
-        ], 
-        disable: [
+            "S_CURVE_ACCELERATION",
 
             /*
              |----------------------------------------------------------------------------
-             | Screens
+             | Skew Correction
              |----------------------------------------------------------------------------
+             | Bed Skew Compensation corrects for misalignment in the XY, XZ, and ZY axes
+             | through the use of correction factors. Use M852 GCode to set a bed skew
+             | compensation factor. Valid correction factors range between -1 and 1.
              */
-            "SHOW_CUSTOM_BOOTSCREEN",
-            "CUSTOM_STATUS_SCREEN_IMAGE"
 
+            "SKEW_CORRECTION",
         ]
     },
     configuration_adv: {
         enable: [
-
             /*
              |----------------------------------------------------------------------------
              | Bed Tramming
@@ -162,7 +167,8 @@ module.exports = {
 
             "ASSISTED_TRAMMING",
             "ASSISTED_TRAMMING_WIZARD",
-            
+            ["TRAMMING_POINT_XY", q`{{30, 30}, {195, 30}, {195, 195}, {30, 195}}`],
+
             /*
              |----------------------------------------------------------------------------
              | Filament Change (M600)
@@ -191,8 +197,7 @@ module.exports = {
 
             "HOST_ACTION_COMMANDS",
             "HOST_PROMPT_SUPPORT",
-            "HOST_STATUS_NOTIFICATIONS"
-
-        ]
-    }
+            "HOST_STATUS_NOTIFICATIONS",
+        ],
+    },
 };
