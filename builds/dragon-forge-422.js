@@ -45,11 +45,6 @@ module.exports = {
             ["DEFAULT_Ki", 1.33],
             ["DEFAULT_Kd", 51.85],
 
-            // Not specific to the sprite extruder, but because the probe offsets are large
-            // this becomes important to specificy accuratly.
-            ["X_MAX_POS", 240],
-            ["Y_MAX_POS", 235],
-
             /*
              |----------------------------------------------------------------------------
              | Z-axis Probe
