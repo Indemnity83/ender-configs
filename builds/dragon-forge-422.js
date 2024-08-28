@@ -47,10 +47,12 @@ module.exports = {
 
             // Not specific to the sprite extruder, but because the probe offsets are large
             // this becomes important to specificy accuratly. 
-            ["X_BED_SIZE", 235],
-            ["Y_BED_SIZE", 235],
-            ["X_MAX_POS", 260],
-            ["Y_MAX_POS", 235],
+            // ["X_BED_SIZE", 230],
+            // ["Y_BED_SIZE", 230],
+            // ["X_MIN_POS", 0],
+            // ["X_MAX_POS", 240],
+            // ["Y_MIN_POS", 0],
+            // ["Y_MAX_POS", 235],
 
             /*
              |----------------------------------------------------------------------------
