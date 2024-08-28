@@ -46,13 +46,9 @@ module.exports = {
             ["DEFAULT_Kd", 51.85],
 
             // Not specific to the sprite extruder, but because the probe offsets are large
-            // this becomes important to specificy accuratly. 
-            // ["X_BED_SIZE", 230],
-            // ["Y_BED_SIZE", 230],
-            // ["X_MIN_POS", 0],
-            // ["X_MAX_POS", 240],
-            // ["Y_MIN_POS", 0],
-            // ["Y_MAX_POS", 235],
+            // this becomes important to specificy accuratly.
+            ["X_MAX_POS", 240],
+            ["Y_MAX_POS", 235],
 
             /*
              |----------------------------------------------------------------------------
@@ -72,7 +68,6 @@ module.exports = {
             "Z_SAFE_HOMING",
             "USE_PROBE_FOR_Z_HOMING",
             ["MULTIPLE_PROBING", 2],
-            ["PROBING_MARGIN", 0],
             ["Z_PROBE_LOW_POINT", -4],
             ["Z_PROBE_OFFSET_RANGE_MIN", -20],
             ["Z_PROBE_OFFSET_RANGE_MAX", 20],
