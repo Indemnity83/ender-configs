@@ -41,9 +41,9 @@ module.exports = {
             ["DEFAULT_MAX_FEEDRATE", [500, 500, 5, 50]],            // Override with M203
             ["DEFAULT_MAX_ACCELERATION", [500, 500, 100, 2500]],    // Override with M201
             ["NOZZLE_TO_PROBE_OFFSET", [-31.5, -40.0, -2.07]],      // Override with M851
-            ["DEFAULT_KP", 16.62],
-            ["DEFAULT_KI", 1.33],
-            ["DEFAULT_KD", 51.85],
+            ["DEFAULT_Kp", 16.62],
+            ["DEFAULT_Ki", 1.33],
+            ["DEFAULT_Kd", 51.85],
 
             /*
              |----------------------------------------------------------------------------
