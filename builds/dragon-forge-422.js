@@ -143,6 +143,22 @@ module.exports = {
              */
 
             "SKEW_CORRECTION",
+
+            /*
+             |----------------------------------------------------------------------------
+             | Bed Dimensions
+             |----------------------------------------------------------------------------
+             | Set the bed dimensions and min/max positions. This is important to ensure
+             | that the printer knows where the bed is and how to move the nozzle. Be
+             | aware the sprite extruder has very different offset from a default.
+             */
+            ["X_BED_SIZE", 220],
+            ["Y_BED_SIZE", 220],
+
+            ["X_MIN_POS", -5],
+            ["X_MAX_POS", 230],
+            ["Y_MIN_POS", 0],
+            ["Y_MAX_POS", 235],
         ]
     },
     configuration_adv: {
