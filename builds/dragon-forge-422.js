@@ -155,14 +155,28 @@ module.exports = {
             ["X_BED_SIZE", 220],
             ["Y_BED_SIZE", 220],
 
-            ["X_MIN_POS", -5],
-            ["X_MAX_POS", 230],
-            ["Y_MIN_POS", 0],
-            ["Y_MAX_POS", 235],
+            ["X_MIN_POS", 5],
+            ["X_MAX_POS", 225],
+            ["Y_MIN_POS", -6],
+            ["Y_MAX_POS", 214],
         ]
     },
     configuration_adv: {
         enable: [
+
+            /*
+             |----------------------------------------------------------------------------
+             | Probe Margins
+             |----------------------------------------------------------------------------
+             | Because the probe is fairly significantly left and front of the nozzle, we
+             | need to constrain the max X/Y position of the head to make sure that it
+             | doesn't crash into other printer objets and break or damanage things.
+             */
+            ["PROBING_MARGIN_LEFT", 10],
+            ["PROBING_MARGIN_FRONT", 10],
+            ["PROBING_MARGIN_RIGHT", 30],
+            ["PROBING_MARGIN_BACK", 50],
+
             /*
              |----------------------------------------------------------------------------
              | Bed Tramming
