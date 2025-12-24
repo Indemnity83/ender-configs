@@ -153,12 +153,12 @@ module.exports = {
              | aware the sprite extruder has very different offset from a default.
              */
             ["X_BED_SIZE", 220],
-            ["X_MIN_POS", -15],
+            ["X_MIN_POS", -10],
             ["X_MAX_POS", 244],
 
-            ["Y_BED_SIZE", 218],
-            ["Y_MIN_POS", -12],
-            ["Y_MAX_POS", 230],
+            ["Y_BED_SIZE", 220],
+            ["Y_MIN_POS", -15],
+            ["Y_MAX_POS", 223],
         ]
     },
     configuration_adv: {
