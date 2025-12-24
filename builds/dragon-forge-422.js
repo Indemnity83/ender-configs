@@ -153,12 +153,12 @@ module.exports = {
              | aware the sprite extruder has very different offset from a default.
              */
             ["X_BED_SIZE", 220],
-            ["Y_BED_SIZE", 220],
+            ["X_MIN_POS", 12],
+            ["X_MAX_POS", 244],
 
-            ["X_MIN_POS", 5],
-            ["X_MAX_POS", 225],
-            ["Y_MIN_POS", -6],
-            ["Y_MAX_POS", 214],
+            ["Y_BED_SIZE", 220],
+            ["Y_MIN_POS", 8],
+            ["Y_MAX_POS", 228],
         ]
     },
     configuration_adv: {
@@ -174,8 +174,8 @@ module.exports = {
              */
             ["PROBING_MARGIN_LEFT", 10],
             ["PROBING_MARGIN_FRONT", 10],
-            ["PROBING_MARGIN_RIGHT", 30],
-            ["PROBING_MARGIN_BACK", 50],
+            ["PROBING_MARGIN_RIGHT", 22],
+            ["PROBING_MARGIN_BACK", 35],
 
             /*
              |----------------------------------------------------------------------------
@@ -189,7 +189,7 @@ module.exports = {
 
             "ASSISTED_TRAMMING",
             "ASSISTED_TRAMMING_WIZARD",
-            ["TRAMMING_POINT_XY", q`{{20, 20}, {180, 20}, {180, 160}, {20, 160}}`],
+            ["TRAMMING_POINT_XY", q`{{20, 20}, {190, 20}, {190, 175}, {20, 175}}`],
 
             /*
              |----------------------------------------------------------------------------
