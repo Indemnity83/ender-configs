@@ -156,9 +156,9 @@ module.exports = {
             ["X_MIN_POS", 12],
             ["X_MAX_POS", 244],
 
-            ["Y_BED_SIZE", 220],
-            ["Y_MIN_POS", 8],
-            ["Y_MAX_POS", 228],
+            ["Y_BED_SIZE", 208],
+            ["Y_MIN_POS", 22],
+            ["Y_MAX_POS", 230],
         ]
     },
     configuration_adv: {
@@ -189,7 +189,7 @@ module.exports = {
 
             "ASSISTED_TRAMMING",
             "ASSISTED_TRAMMING_WIZARD",
-            ["TRAMMING_POINT_XY", q`{{20, 20}, {190, 20}, {190, 175}, {20, 175}}`],
+            ["TRAMMING_POINT_XY", q`{{20, 20}, {190, 20}, {190, 170}, {20, 170}}`],
 
             /*
              |----------------------------------------------------------------------------
