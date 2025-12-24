@@ -154,11 +154,11 @@ module.exports = {
              */
             ["X_BED_SIZE", 220],
             ["X_MIN_POS", -10],
-            ["X_MAX_POS", 244],
+            ["X_MAX_POS", 228],
 
             ["Y_BED_SIZE", 220],
             ["Y_MIN_POS", -15],
-            ["Y_MAX_POS", 223],
+            ["Y_MAX_POS", 220],
         ]
     },
     configuration_adv: {
@@ -174,8 +174,8 @@ module.exports = {
              */
             ["PROBING_MARGIN_LEFT", 10],
             ["PROBING_MARGIN_FRONT", 10],
-            ["PROBING_MARGIN_RIGHT", 22],
-            ["PROBING_MARGIN_BACK", 35],
+            ["PROBING_MARGIN_RIGHT", 26],
+            ["PROBING_MARGIN_BACK", 45],
 
             /*
              |----------------------------------------------------------------------------
@@ -189,7 +189,7 @@ module.exports = {
 
             "ASSISTED_TRAMMING",
             "ASSISTED_TRAMMING_WIZARD",
-            ["TRAMMING_POINT_XY", q`{{20, 20}, {190, 20}, {190, 170}, {20, 170}}`],
+            ["TRAMMING_POINT_XY", q`{{52, 70}, {192, 70}, {192, 175}, {52, 175}}`],
 
             /*
              |----------------------------------------------------------------------------
